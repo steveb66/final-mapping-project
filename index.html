@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>nycbikedata :: mapping project</title>
+ 
+    <!-- For full screen Leaflet maps, add the following meta tag to set parameters in the viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- Including Leaflet CSS -->
+    <link type="text/css" rel="stylesheet" href="libraries/leaflet-0.7.3/leaflet.css"/>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Including our custom CSS -->
+    <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+
+  </head>
+
+  <body>
+
+
+
+    <nav class="navbar navbar-default-navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">nycbikedata</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          
+          
+          <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">map</a></li>
+        <li class="active"><a href="addtomap.html">add to the map</a></li>
+        <li class="active"><a href="info.html">info</a></li>
+
+      </ul>             
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    
+  
+    
+  	<div id="map"></div>
+  	
+  	
+  	
+  	
+  	
+  </body>
+  
+  
+ 
+  <!-- Including jQuery Library -->
+  <script type="text/javascript" src="libraries/jQuery/jquery-1.11.2.min.js"></script>
+
+  <!-- Including bootstrap Library -->
+  <script type="text/javascript" src="libraries/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+  
+  <!-- Including Leaflet Javascript Library -->
+  <script type="text/javascript" src="libraries/leaflet-0.7.3/leaflet.js"></script>
+  
+  <!--
+  <script type="text/javascript" src="libraries/leaflet-omivore/leaflet-omnivore.min.js"></script>
+    <script type="text/javascript" src="libraries/d3/d3.min.js"></script>
+    <script type="text/javascript" src="libraries/underscrore/underscore-min.js"></script>
+    <script type="text/javascript" src="libraries/crossfilter/crossfilter.min.js"></script>
+  -->
+  
+  <!-- Including our custom Javascript -->
+  <!-- Adding the GeoJSON Data -->  
+  
+   <script type="text/javascript" src="data/nycBikeRoute.geojson"></script> 
+  <script type="text/javascript" src="data/rideRollupTotalWeekend.geojson"></script> 
+  <script type="text/javascript" src="data/rideRollupTotalWeekday.geojson"></script> 
+  <script type="text/javascript" src="data/fatality_all_monthly.json"></script> 
+    <script type="text/javascript" src="data/injury_all_monthly.json"></script> 
+
+
+  <!-- Including our custom Javascript -->  
+  <script type="text/javascript" src="js/script.js"></script>
+  
+</html>
